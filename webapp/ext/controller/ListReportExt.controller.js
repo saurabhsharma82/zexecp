@@ -5,7 +5,7 @@ sap.ui.define([
 
     return {
         Create: function(oEvent) {
-            MessageToast.show("Custom handler invoked.");
+            MessageToast.show("Custom handler invoked.");//new
         }
     };
 });

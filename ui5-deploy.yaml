@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: zexcep
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: S43_010
+          url: http://s43spt.stocklandnet.com.au:44300
+        app:
+          name: ZEXCEPTION
+          description: Exception
+          package: $tmp
+          transport: ""
+        exclude:
+          - /test/

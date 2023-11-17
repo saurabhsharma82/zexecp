@@ -1,0 +1,9 @@
+{
+  "applications": {
+    "ccdoa-read": {
+      "additionalInformation": "SAPUI5.Component=com.stk.zccdoa",
+      "applicationType": "URL",
+      "url": "../resources/com.stk.zccdoa"
+    }
+  }
+}
